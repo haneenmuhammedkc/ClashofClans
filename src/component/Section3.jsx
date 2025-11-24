@@ -1,41 +1,40 @@
-import React from 'react'
-import img from "../assets/bg.jpg"
-import img1 from "../assets/reddit.webp"
-import img2 from "../assets/youtube.webp"
-import img3 from "../assets/facebook.webp"
-import img4 from "../assets/instagram.webp"
-import img5 from "../assets/twitter.webp"
-import img6 from "../assets/discord.webp"
-import img7 from "../assets/phone2.webp"
+import React from "react";
+import bg from "../assets/bg.jpg";
+import reddit from "../assets/reddit.webp";
+import youtube from "../assets/youtube.webp";
+import facebook from "../assets/facebook.webp";
+import instagram from "../assets/instagram.webp";
+import twitter from "../assets/twitter.webp";
+import discord from "../assets/discord.webp";
+import phoneImg from "../assets/phone2.webp";
 
 function Section3() {
   return (
-    <>
-    <div style={{backgroundImage:`url(${img})`}} className='w-full h-[80vh] max-xl:h-[35vh] max-sm:h-[80vh] bg-center bg-cover flex'>
-        <div className='w-[50%] h-[100%] max-sm:w-[100%] flex max-sm:flex-col lg:items-center lg:justify-end-safe'>
-            <div className='w-[80%] max-sm:w-[94%] h-[50%] max-sm:pl-[3%] max-sm:flex max-sm:flex-col max-sm:items-center'>
-                <h1 className='text-white font-bold text-4xl max-sm:pt-[20px] '>SEE THE LATEST</h1><br/>
-                <p className='text-white text-xl'>To stay on top of your game, keep an eye on the in-game News section. Follow us on social media for the latest chatter and sneak peeks on what the team is working on. Don’t be a stranger and join the conversation.</p><br/>
-                <p className='text-white text-sm font-bold'>FOLLOW CLASH OF CLANS ON</p><br/>
-                <div className='w-[100%] h-[20%] flex flex-row gap-[20px]'>
-                    <img className='w-[28px] h-[23px]' src={img1} alt="" />
-                    <img className='w-[28px] h-[23px]' src={img2} alt="" />
-                    <img className='w-[28px] h-[23px]' src={img3} alt="" />
-                    <img className='w-[28px] h-[23px]' src={img4} alt="" />
-                    <img className='w-[28px] h-[23px]' src={img5} alt="" />
-                    <img className='w-[28px] h-[23px]' src={img6} alt="" />
-                </div>
+    <section className="w-full bg-cover bg-center" style={{ backgroundImage: `url(${bg})` }}>
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="text-white">
+            <h3 className="text-3xl lg:text-4xl font-bold mb-4"> SEE THE LATEST </h3>
+            <p className="text-base lg:text-lg mb-4"> To stay on top of your game, keep an eye on the in-game News section. Follow us on social media for the latest chatter and sneak peeks on what the team is working on. Don’t be a stranger and join the conversation. </p>
+            <p className="font-semibold mb-3"> FOLLOW CLASH OF CLANS ON </p>
+            <div className="flex flex-wrap gap-4">
+              <img src={reddit} alt="reddit" className="w-7 h-7" />
+              <img src={youtube} alt="youtube" className="w-7 h-7" />
+              <img src={facebook} alt="facebook" className="w-7 h-7" />
+              <img src={instagram} alt="instagram" className="w-7 h-7" />
+              <img src={twitter} alt="twitter" className="w-7 h-7" />
+              <img src={discord} alt="discord" className="w-7 h-7" />
             </div>
-            <div className='w-[100%] h-[100%] flex items-center lg:hidden overflow-hidden'>
-            <img className='w-[430px] h-[260px] relative left-[-85px]' src={img7} alt="" />
+          </div>
+          <div className="flex justify-center lg:justify-end">
+            <div className="max-w-[520px] w-full">
+              <img src={phoneImg} alt="phone showcase" className="w-full h-auto object-contain"/>
             </div>
+          </div>
         </div>
-        <div className='w-[50%] h-[100%] flex items-center max-lg:hidden overflow-hidden'>
-            <img className='w-[922px] h-[430px] max-xl:h-[330px] relative right-[-160px] max-xl:right-[-120px]' src={img7} alt="" />
-        </div>
-    </div>
-    </>
-  )
+      </div>
+    </section>
+  );
 }
 
 export default Section3

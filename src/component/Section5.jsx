@@ -1,75 +1,71 @@
-import React from 'react'
-import img from "../assets/youtube.webp"
-import img1 from "../assets/facebook.webp"
-import img2 from "../assets/instagram.webp"
-import img3 from "../assets/twitter.webp"
-import img4 from "../assets/linkedin.webp"
-import img5 from "../assets/door.webp"
-import img6 from "../assets/googleplay.webp"
-import img7 from "../assets/appstore.webp"
-import img8 from "../assets/logo.webp"
-import img9 from "../assets/robo.webp"
-
+import React from "react";
+import youtube from "../assets/youtube.webp";
+import facebook from "../assets/facebook.webp";
+import instagram from "../assets/instagram.webp";
+import twitter from "../assets/twitter.webp";
+import linkedin from "../assets/linkedin.webp";
+import door from "../assets/door.webp";
+import googleplay from "../assets/googleplay.webp";
+import appstore from "../assets/appstore.webp";
+import logo from "../assets/logo.webp";
+import mascot from "../assets/robo.webp";
 
 function Section5() {
   return (
-    <>
-    <div className='w-full h-[90vh] max-xl:h-[60vh] max-sm:h-[120vh]'>
-        <div className='w-[100%] h-[30%] max-xl:h-[50%] flex max-xl:flex-col bg-blue-500'>
-            <div className='w-[50%] h-[100%] max-xl:w-[100%] max-xl:h-[50%] flex justify-center items-center flex-col gap-[10px] max-sm:pl-[20px]'>
-                <h2 className='text-white text-3xl font-bold'>INTERESTED IN WORKING WITH US?</h2>
-                <button className='w-[200px] h-[45px] rounded-md bg-white text-black font-medium'>SEE ALL POSITIONS</button>
-            </div>
-            <div className='w-[50%] h-[100%] max-xl:w-[100%] max-xl:h-[50%] flex justify-center relative xl:top-[-52px] max-sm:bottom-[-75px]'>
-              <img className='w-[250px] h-[250px] max-xl:w-[194px] max-xl:h-[205px]' src={img9} alt="" />
-            </div>
+    <footer className="w-full bg-black text-white">
+      <div className="container mx-auto px-4 py-12">
+        <div className="bg-blue-600 rounded-md p-8 flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 className="text-2xl font-bold"> INTERESTED IN WORKING WITH US? </h3>
+            <p className="mt-2 hidden sm:block"> See our open positions and join the team. </p>
+          </div>
+          <div className="flex items-center gap-6">
+            <button className="px-5 py-3 bg-white text-black rounded-md font-medium"> SEE ALL POSITIONS </button>
+            <img src={mascot} alt="mascot" className="w-28 h-auto" />
+          </div>
         </div>
-        <div className='w-[100%] h-[70%] max-xl:h-[50%] bg-black'>
-            <div className='w-[100%] h-[30%] flex max-sm:flex-col'>
-              <div className='w-[35%] h-[100%] max-sm:w-[100%] max-sm:pl-[20px] max-sm:pt-[10px]'>
-                  <div className='w-[65%] h-[50%] md:flex md:items-end md:justify-center'>
-                    <p className='text-white font-semibold text-sm'>Follow us on</p>
-                  </div>
-                  <div className='w-[100%] h-[50%] flex md:justify-center md:items-center gap-[20px]'>
-                    <img className='w-[27px] h-[23px]' src={img} alt="" />
-                    <img className='w-[27px] h-[23px]' src={img1} alt="" />
-                    <img className='w-[27px] h-[23px]' src={img2} alt="" />
-                    <img className='w-[27px] h-[23px]' src={img3} alt="" />
-                    <img className='w-[27px] h-[23px]' src={img4} alt="" />
-                    <img className='w-[27px] h-[23px]' src={img5} alt="" />
-                  </div>
-              </div>
-              <div className='w-[55%] h-[100%] flex md:justify-end items-center gap-[20px] max-sm:pl-[20px]'>
-                <img className='w-[150px] h-[50px]' src={img6} alt="" />
-                <img className='w-[150px] h-[50px]' src={img7} alt="" />
-              </div>
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <p className="text-sm font-semibold mb-3"> Follow us on </p>
+            <div className="flex gap-3 items-center">
+              <img src={youtube} alt="youtube" className="w-7 h-7" />
+              <img src={facebook} alt="facebook" className="w-7 h-7" />
+              <img src={instagram} alt="instagram" className="w-7 h-7" />
+              <img src={twitter} alt="twitter" className="w-7 h-7" />
+              <img src={linkedin} alt="linkedin" className="w-7 h-7" />
+              <img src={door} alt="door" className="w-7 h-7" />
             </div>
-            <div className='w-[100%] max-xl:w-[94%] h-[20%] max-sm:h-[55%] flex max-sm:flex-col md:items-center gap-[20px] pl-[135px] max-xl:pl-[74px] max-sm:pl-[20px] max-xl:gap-[0px] max-sm:gap-[15px]'>
-              <p className='text-white font-semibold text-sm'>Terms of Service</p>
-              <p className='text-white font-semibold text-sm'>Privacy Policy</p>
-              <p className='text-white font-semibold text-sm'>Parent's Guide</p>
-              <p className='text-white font-semibold text-sm'>Safe and Fair Play Policy</p>
-              <p className='text-white font-semibold text-sm'>Accessibility Statement</p>
-              <p className='text-white font-semibold text-sm'>Other Legal Docs</p>
-              <p className='text-white font-semibold text-sm'>Media Center</p>
-              <p className='text-white font-semibold text-sm'>Our Domains</p>
-              <p className='text-white font-semibold text-sm'>Manage Cookies</p>
+            <div className="mt-4 flex gap-3">
+              <img src={googleplay} alt="google play" className="w-36 h-auto" />
+              <img src={appstore} alt="app store" className="w-36 h-auto" />
             </div>
-            <div className='w-[100%] h-[20%] flex'>
-              <div className='w-[50%] h-[100%] pl-[135px] max-xl:pl-[74px] max-sm:pl-[20px]'>
-                <p className='text-gray-400 font-semibold text-sm'>Supercell Oy</p>
-                <p className='text-gray-400 font-semibold text-sm'>Jätkäsaarenlaituri 1</p>
-                <p className='text-gray-400 font-semibold text-sm'>00180 Helsinki</p>
-                <p className='text-gray-400 font-semibold text-sm'>Finland</p>
-              </div>
-              <div className='w-[50%] h-[100%] flex justify-end pr-[100px] max-sm:pr-[15px] max-sm:pt-[20px]'>
-                <img className='w-[54px] h-[44px]' src={img8} alt="" />
-              </div>
+          </div>
+          <div className="md:col-span-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div className="flex flex-wrap gap-4 text-sm">
+              <p className="text-white/90"> Terms of Service </p>
+              <p className="text-white/90"> Privacy Policy </p>
+              <p className="text-white/90"> Parent's Guide </p>
+              <p className="text-white/90"> Safe and Fair Play Policy </p>
+              <p className="text-white/90"> Accessibility Statement </p>
+              <p className="text-white/90"> Other Legal Docs </p>
+              <p className="text-white/90"> Media Center </p>
+              <p className="text-white/90"> Our Domains </p>
+              <p className="text-white/90"> Manage Cookies </p>
             </div>
+            <div className="flex items-center gap-6">
+              <div className="text-sm text-gray-400">
+                <p> Supercell Oy </p>
+                <p> Jätkäsaarenlaituri 1 </p>
+                <p> 00180 Helsinki </p>
+                <p> Finland </p>
+              </div>
+              <img src={logo} alt="logo" className="w-14 h-auto" />
+            </div>
+          </div>
         </div>
-    </div>
-    </>
-  )
+      </div>
+    </footer>
+  );
 }
 
 export default Section5
